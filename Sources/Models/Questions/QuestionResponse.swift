@@ -1,10 +1,10 @@
 import Foundation
 
 public struct QuestionResponse: Codable, Equatable {
-    public let id: String
+    public let id: UUID
     public let title: String
 
-    public init(id: String, title: String) {
+    public init(id: UUID, title: String) {
         self.id = id
         self.title = title
     }
